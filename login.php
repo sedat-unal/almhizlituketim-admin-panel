@@ -35,7 +35,6 @@ include("settings/functions.php"); ?>
     </div>
     <!-- ./ logo -->
 
-
     <h5>Giriş Yap</h5>
     <?php
     if ($_POST)
@@ -62,7 +61,7 @@ include("settings/functions.php"); ?>
             $checkUserPassword->execute(array(":kullaniciAdi" => $username));
             $userPasswordFetch = $checkUserPassword->fetch(PDO::FETCH_ASSOC);
             //if true
-            if ($password == $userPasswordFetch["yonetici_sifre"]) {
+            if (sha1(md5($password)) == $userPasswordFetch["yonetici_sifre"]) {
                 $getUserAdmin = $connectDb->prepare("SELECT * FROM yoneticiler WHERE yonetici_kadi = :kullaniciAdi");
                 $getUserAdmin->execute(array(":kullaniciAdi" => $username));
                 if ($getUserAdmin->rowCount())
