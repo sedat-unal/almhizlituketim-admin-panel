@@ -374,7 +374,7 @@
                                          class="rounded-circle"
                                          alt="avatar">
                                 </figure>
-                                <span class="ml-2 d-sm-inline d-none">Bony Gidden</span>
+                                <span class="ml-2 d-sm-inline d-none"><?=$_SESSION["userName"]?></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
                                 <div class="text-center py-4">
@@ -382,9 +382,9 @@
                                         <img src="./assets/media/image/user/man_avatar3.jpg"
                                              class="rounded-circle" alt="image">
                                     </figure>
-                                    <h5 class="text-center">Bony Gidden</h5>
-                                    <div class="mb-3 small text-center text-muted">@bonygidden</div>
-                                    <a href="#" class="btn btn-outline-light btn-rounded">Manage Your Account</a>
+                                    <h5 class="text-center"><?=$_SESSION["userName"]?></h5>
+                                    <div class="mb-3 small text-center text-muted">@<?=$_SESSION["userName"]?></div>
+                                    <a href="#" class="btn btn-outline-light btn-rounded">Hesabını Yönet</a>
                                 </div>
                                 <div class="list-group">
                                     <a href="profile.html" class="list-group-item">View Profile</a>
@@ -405,7 +405,7 @@
                                     </div>
                                     <hr class="mb-3">
                                     <p class="small mb-0">
-                                        <a href="#">Privacy policy</a>
+                                        <a href="logout.php">Çıkış Yap</a>
                                     </p>
                                 </div>
                             </div>

@@ -16,8 +16,8 @@
             <div class="content ">
                 <div class="page-header d-md-flex justify-content-between">
                     <div>
-                        <h3>Welcome back, Bony</h3>
-                        <p class="text-muted">This page shows an overview for your account summary.</p>
+                        <h3>Tekrar Hoş Geldin, <?=$_SESSION["userName"]?></h3>
+                        <p class="text-muted">Bu sayfada kısayollar ve özetler bulunuyor.</p>
                     </div>
                     <div class="mt-3 mt-md-0">
                         <div id="dashboard-daterangepicker" class="btn btn-outline-light">

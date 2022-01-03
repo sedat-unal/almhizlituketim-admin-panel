@@ -11,3 +11,9 @@ try {
 {
     echo "connection failed. here is fail code : " . $e->getMessage();
 }
+
+$getSettings = $connectDb->prepare("SELECT * FROM settings");
+$getSettings->execute();
+if ($getSettings->rowCount()){
+    $settingsRow = $getSettings->fetch(PDO::FETCH_ASSOC);
+}

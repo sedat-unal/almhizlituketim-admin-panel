@@ -13,7 +13,7 @@ include("settings/functions.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gogi - Admin and Dashboard Template</title>
+    <title><?=$settingsRow["settings_title"]?></title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/media/image/favicon.png"/>

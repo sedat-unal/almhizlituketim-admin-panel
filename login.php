@@ -49,7 +49,7 @@ include("settings/functions.php"); ?>
         //control post data if empty ?
         if (empty($username) || empty($password))
         {
-            echo fail("Lütfen tüm alanları doldurunuz.")
+            echo fail("Lütfen tüm alanları doldurunuz.");
         }
 
         //the post datas username control db if exist
