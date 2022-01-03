@@ -37,8 +37,7 @@ include("settings/functions.php"); ?>
 
     <h5>Giriş Yap</h5>
     <?php
-    if ($_POST)
-    {
+    if ($_POST) {
         include "settings/connection.php";
 
         //get post data
@@ -46,8 +45,7 @@ include("settings/functions.php"); ?>
         $password = $_POST["password"];
 
         //control post data if empty ?
-        if (empty($username) || empty($password))
-        {
+        if (empty($username) || empty($password)) {
             echo fail("Lütfen tüm alanları doldurunuz.");
         }
 
@@ -64,8 +62,7 @@ include("settings/functions.php"); ?>
             if (sha1(md5($password)) == $userPasswordFetch["yonetici_sifre"]) {
                 $getUserAdmin = $connectDb->prepare("SELECT * FROM yoneticiler WHERE yonetici_kadi = :kullaniciAdi");
                 $getUserAdmin->execute(array(":kullaniciAdi" => $username));
-                if ($getUserAdmin->rowCount())
-                {
+                if ($getUserAdmin->rowCount()) {
                     $userRow = $getUserAdmin->fetch(PDO::FETCH_ASSOC);
                     $_SESSION == true;
                     $_SESSION["userName"] = $userRow["yonetici_kadi"];
@@ -74,8 +71,7 @@ include("settings/functions.php"); ?>
                     $ip = $_SERVER['REMOTE_ADDR'];
                     $updateIP = $connectDb->prepare("UPDATE yoneticiler SET yonetici_lastLogin = :ip WHERE yonetici_id = :id");
                     $updateIP->execute(array(":ip" => $ip, ":id" => $userRow["yonetici_id"]));
-                    if ($updateIP)
-                    {
+                    if ($updateIP) {
                         echo success("Başarıyla giriş yapıldı. Yönlendiriliyorsunuz..");
                         header("refresh:2;url=index.php");
                     }
