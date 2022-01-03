@@ -1,4 +1,10 @@
 <?php
+session_start();
+ob_start();
+if ($_SESSION == false)
+{
+    header("location:login.php");
+}
 include("settings/functions.php");
 ?>
 <!doctype html>

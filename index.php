@@ -1,9 +1,5 @@
-<?php
-if ($_SESSION["user"] == NULL) {
-    header("location:login.php");
-}
+<?php include("include/header.php");?>
 
-include("include/header.php");?>
 <!-- Preloader -->
 <?php include("include/preloader.php"); ?>
 <!-- ./ Preloader -->
