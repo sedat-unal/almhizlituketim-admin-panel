@@ -24,14 +24,12 @@ include("settings/functions.php");
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Daterangepicker -->
-    <link rel="stylesheet" href="./vendors/datepicker/daterangepicker.css" type="text/css">
-
-    <!-- DataTable -->
-    <link rel="stylesheet" href="./vendors/dataTable/datatables.min.css" type="text/css">
-
     <!-- App css -->
     <link rel="stylesheet" href="./assets/css/app.min.css" type="text/css">
+
+    <!-- Slick slide -->
+    <link rel="stylesheet" href="./vendors/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

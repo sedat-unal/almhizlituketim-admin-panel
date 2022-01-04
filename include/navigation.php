@@ -14,7 +14,8 @@
 
                 <div class="header-logo">
                     <a href=index.php>
-                        <img class="logo" src="./assets/media/image/logo.png" alt="logo">
+                        <img class="logo" src="./assets/media/image/alm-logo.png" alt="logo"
+                             style="margin-left: 30px;margin-top:10px;width: 140px;height: 60px;">
                     </a>
                 </div>
             </div>
@@ -31,7 +32,7 @@
                                                 <i data-feather="search"></i>
                                             </button>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Search">
+                                        <input type="text" class="form-control" placeholder="Ara">
                                         <div class="input-group-append">
                                             <button class="btn header-search-close-btn">
                                                 <i data-feather="x"></i>
@@ -42,10 +43,10 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown d-none d-md-block">
-                            <a href="#" class="nav-link" title="Apps" data-toggle="dropdown">Apps</a>
+                            <a href="#" class="nav-link" title="Uygulamalar" data-toggle="dropdown">Uygulamalar</a>
                             <div class="dropdown-menu dropdown-menu-big">
                                 <div class="border-bottom px-4 py-3 text-center d-flex justify-content-between">
-                                    <h5 class="mb-0">Apps</h5>
+                                    <h5 class="mb-0">Uygulamalar</h5>
                                 </div>
                                 <div class="p-3">
                                     <div class="row row-xs">
@@ -57,7 +58,7 @@
                                                     <i class="width-30 height-30" data-feather="message-circle"></i>
                                                 </span>
                                                     </figure>
-                                                    <div class="mt-2">Chat</div>
+                                                    <div class="mt-2">Mesajlar</div>
                                                 </div>
                                             </a>
                                         </div>
@@ -81,7 +82,7 @@
                                                     <i class="width-30 height-30" data-feather="check-circle"></i>
                                                 </span>
                                                     </figure>
-                                                    <div class="mt-2">Todo List</div>
+                                                    <div class="mt-2">Yapılacaklar</div>
                                                 </div>
                                             </a>
                                         </div>
@@ -93,7 +94,7 @@
                                                     <i class="width-30 height-30" data-feather="file"></i>
                                                 </span>
                                                     </figure>
-                                                    <div class="mt-2">File Manager</div>
+                                                    <div class="mt-2">Dosya Yöneticisi</div>
                                                 </div>
                                             </a>
                                         </div>
@@ -102,14 +103,14 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown d-none d-md-block">
-                            <a href="#" class="nav-link" title="Actions" data-toggle="dropdown">Create</a>
+                            <a href="#" class="nav-link" title="Actions" data-toggle="dropdown">Oluştur</a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Add Products</a>
-                                <a href="#" class="dropdown-item">Add Category</a>
-                                <a href="#" class="dropdown-item">Add Report</a>
+                                <a href="#" class="dropdown-item">Ürün Ekle</a>
+                                <a href="#" class="dropdown-item">Kategori Ekle</a>
+                                <a href="#" class="dropdown-item">Rapor Ekle</a>
                                 <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">Reports</a>
-                                <a href="#" class="dropdown-item">Customers</a>
+                                <a href="#" class="dropdown-item">Raporlar</a>
+                                <a href="#" class="dropdown-item">Müşteriler</a>
                             </div>
                         </li>
                     </ul>
@@ -118,13 +119,13 @@
                 <div class="header-body-right">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link mobile-header-search-btn" title="Search">
+                            <a href="#" class="nav-link mobile-header-search-btn" title="Ara">
                                 <i data-feather="search"></i>
                             </a>
                         </li>
 
                         <li class="nav-item dropdown d-none d-md-block">
-                            <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                            <a href="#" class="nav-link" title="Tam Ekran" data-toggle="fullscreen">
                                 <i class="maximize" data-feather="maximize"></i>
                                 <i class="minimize" data-feather="minimize"></i>
                             </a>
@@ -374,7 +375,7 @@
                                          class="rounded-circle"
                                          alt="avatar">
                                 </figure>
-                                <span class="ml-2 d-sm-inline d-none"><?=$_SESSION["userName"]?></span>
+                                <span class="ml-2 d-sm-inline d-none"><?= $_SESSION["userName"] ?></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
                                 <div class="text-center py-4">
@@ -382,8 +383,8 @@
                                         <img src="./assets/media/image/user/man_avatar3.jpg"
                                              class="rounded-circle" alt="image">
                                     </figure>
-                                    <h5 class="text-center"><?=$_SESSION["userName"]?></h5>
-                                    <div class="mb-3 small text-center text-muted">@<?=$_SESSION["userName"]?></div>
+                                    <h5 class="text-center"><?= $_SESSION["userName"] ?></h5>
+                                    <div class="mb-3 small text-center text-muted">@<?= $_SESSION["userName"] ?></div>
                                     <a href="#" class="btn btn-outline-light btn-rounded">Hesabını Yönet</a>
                                 </div>
                                 <div class="list-group">
@@ -430,410 +431,39 @@
         <!-- begin::navigation -->
         <div class="navigation">
             <div class="navigation-header">
-                <span>Navigation</span>
+                <span>Menü</span>
                 <a href="#">
                     <i class="ti-close"></i>
                 </a>
             </div>
             <div class="navigation-menu-body">
                 <ul>
-                    <li>
-                        <a class="active" href=index.php>
-                    <span class="nav-link-icon">
-                        <i data-feather="pie-chart"></i>
-                    </span>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="chat.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="message-circle"></i>
-                    </span>
-                            <span>Chat</span>
-                            <span class="badge badge-danger">5</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mail.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="mail"></i>
-                    </span>
-                            <span>Mail</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="todo-list.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="check-square"></i>
-                    </span>
-                            <span>Todo List</span>
-                            <span class="badge badge-warning">2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="file-manager.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="file-plus"></i>
-                    </span>
-                            <span>File Manager</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="calendar.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="calendar"></i>
-                    </span>
-                            <span>Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="image"></i>
-                    </span>
-                            <span>Gallery</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="invoice.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="file-text"></i>
-                    </span>
-                            <span>Invoice</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                    <span class="nav-link-icon">
-                        <i data-feather="shopping-cart"></i>
-                    </span>
-                            <span>E-commerce</span>
-                        </a>
-                        <ul>
+                    <?php
+                    $getMenu = $connectDb->query("SELECT * FROM admin_menu", PDO::FETCH_ASSOC);
+                    if ($getMenu->rowCount()) {
+                        foreach ($getMenu as $menuItems) {
+                            ?>
                             <li>
-                                <a href="orders.html">Orders</a>
-                            </li>
-                            <li>
-                                <a href="products.html">Products</a>
-                            </li>
-                            <li>
-                                <a href="product-detail.html">Product Detail</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                    <span class="nav-link-icon">
-                        <i data-feather="edit-3"></i>
-                    </span>
-                            <span>Forms</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="basic-forms.html">Basic Forms</a>
-                            </li>
-                            <li>
-                                <a href="custom-forms.html">Custom Forms</a>
-                            </li>
-                            <li>
-                                <a href="advanced-forms.html">Advanced Forms</a>
-                            </li>
-                            <li>
-                                <a href="form-validation.html">Form Validation</a>
-                            </li>
-                            <li>
-                                <a href="form-wizard.html">Form Wizard</a>
-                            </li>
-
-                            <li>
-                                <a href="form-repeater.html">Form Repeater</a>
-                            </li>
-                            <li>
-                                <a href="file-upload.html">File Upload</a>
-                            </li>
-                            <li>
-                                <a href="ckeditor.html">CKEditor</a>
-                            </li>
-                            <li>
-                                <a href="datepicker.html">Datepicker</a>
-                            </li>
-                            <li>
-                                <a href="timepicker.html">Timepicker</a>
-                            </li>
-                            <li>
-                                <a href="colorpicker.html">Colorpicker</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                    <span class="nav-link-icon">
-                        <i data-feather="layers"></i>
-                    </span>
-                            <span>Components</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Elements</a>
-                                <ul>
-                                    <li>
-                                        <a href="alert.html">Alerts</a>
-                                    </li>
-                                    <li>
-                                        <a href="accordion.html">Accordion</a>
-                                    </li>
-                                    <li>
-                                        <a href="buttons.html">Buttons</a>
-                                    </li>
-                                    <li>
-                                        <a href="dropdown.html">Dropdown</a>
-                                    </li>
-                                    <li>
-                                        <a href="list-group.html">List Group</a>
-                                    </li>
-                                    <li>
-                                        <a href="pagination.html">Pagination</a>
-                                    </li>
-                                    <li>
-                                        <a href="typography.html">Typography</a>
-                                    </li>
-                                    <li>
-                                        <a href="media-object.html">Media Object</a>
-                                    </li>
-                                    <li>
-                                        <a href="progress.html">Progress</a>
-                                    </li>
-                                    <li>
-                                        <a href="modal.html">Modal</a>
-                                    </li>
-                                    <li>
-                                        <a href="spinners.html">Spinners</a>
-                                    </li>
-                                    <li>
-                                        <a href="navs.html">Navs</a>
-                                    </li>
-                                    <li>
-                                        <a href="tab.html">Tab</a>
-                                    </li>
-                                    <li>
-                                        <a href="tooltip.html">Tooltip</a>
-                                    </li>
-                                    <li>
-                                        <a href="popovers.html">Popovers</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Cards</a>
-                                <ul>
-                                    <li>
-                                        <a href="basic-cards.html">Basic Cards </a>
-                                    </li>
-                                    <li>
-                                        <a href="image-cards.html">Image Cards </a>
-                                    </li>
-                                    <li>
-                                        <a href="scroll-cards.html">Scroll Cards </a>
-                                    </li>
-                                    <li>
-                                        <a href="other-cards.html">Others Cards</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Tables</a>
-                                <ul>
-                                    <li>
-                                        <a href="basic-tables.html">Basic Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="dataTable.html">Datatable</a>
-                                    </li>
-                                    <li>
-                                        <a href="responsive-tables.html">Responsive Tables</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Charts</a>
-                                <ul>
-                                    <li>
-                                        <a href="apexchart.html">Apex Chart</a>
-                                    </li>
-                                    <li>
-                                        <a href="chartjs.html">Chartjs</a>
-                                    </li>
-                                    <li>
-                                        <a href="justgage.html">Justgage</a>
-                                    </li>
-                                    <li>
-                                        <a href="morsis.html">Morsis</a>
-                                    </li>
-                                    <li>
-                                        <a href="peity.html">Peity</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Maps</a>
-                                <ul>
-                                    <li>
-                                        <a href="google-map.html">Google Map</a>
-                                    </li>
-                                    <li>
-                                        <a href="vector-map.html">Vector Map</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="avatar.html">
-                                    Avatar
+                                <a class="
+                                            <?php
+                                                $getURL = $_SERVER['REQUEST_URI'];
+                                                $explode = explode("/", $getURL);
+                                                if ($explode[2] == $menuItems["a_menu_href"])
+                                                {
+                                                    echo "active";
+                                                }
+                                            ?>"
+                                   href="<?= $menuItems["a_menu_href"] ?>">
+                                    <span class="nav-link-icon">
+                                        <i data-feather="<?= $menuItems["a_menu_icon"] ?>"></i>
+                                    </span>
+                                    <span><?= $menuItems["a_menu_title"] ?></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="icons.html">
-                                    Icons
-                                </a>
-                            </li>
-                            <li>
-                                <a href="colors.html">
-                                    Colors
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                    <span class="nav-link-icon">
-                        <i data-feather="gift"></i>
-                    </span>
-                            <span>Plugins</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="sweet-alert.html">Sweet Alert</a>
-                            </li>
-                            <li>
-                                <a href="lightbox.html">Lightbox</a>
-                            </li>
-                            <li>
-                                <a href="toast.html">Toast</a>
-                            </li>
-                            <li>
-                                <a href="tour.html">Tour</a>
-                            </li>
-                            <li>
-                                <a href="slick-slide.html">Slick Slide</a>
-                            </li>
-                            <li>
-                                <a href="nestable.html">Nestable</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                    <span class="nav-link-icon">
-                        <i data-feather="copy"></i>
-                    </span>
-                            <span>Pages</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="profile.html">Profile</a>
-                            </li>
-                            <li>
-                                <a href="users.html">Users</a>
-                            </li>
-                            <li>
-                                <a href="settings.html">Settings</a>
-                            </li>
-                            <li>
-                                <a href="login.html" target="_blank">Login</a>
-                            </li>
-                            <li>
-                                <a href="register.html" target="_blank">Register</a>
-                            </li>
-                            <li>
-                                <a href="recovery-password.html" target="_blank">Recovery Password</a>
-                            </li>
-                            <li>
-                                <a href="lock-screen.html" target="_blank">Lock Screen</a>
-                            </li>
-                            <li>
-                                <a href="timeline.html">Timeline</a>
-                            </li>
-                            <li>
-                                <a href="pricing-table.html">Pricing Table</a>
-                            </li>
-
-                            <li>
-                                <a href="pricing-table-2.html">Pricing Table 2</a>
-                            </li>
-                            <li>
-                                <a href="search-result.html">Search Result</a>
-                            </li>
-                            <li>
-                                <a href="#">Error Pages</a>
-                                <ul>
-                                    <li>
-                                        <a href="404.html" target="_blank">404</a>
-                                    </li>
-                                    <li>
-                                        <a href="mean-at-work.html" target="_blank">Mean at Work</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="blank-page.html">Blank Page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="mailing.html">
-                    <span class="nav-link-icon">
-                        <i data-feather="corner-up-right"></i>
-                    </span>
-                            <span>Mailing</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a target="_blank" href="email-template-basic.html">Basic</a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="email-template-alert.html">Alert</a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="email-template-billing.html">Billing</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                    <span class="nav-link-icon">
-                        <i data-feather="menu"></i>
-                    </span>
-                            <span>Menu Level</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">Menu Level</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Menu Level </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="disabled">
-                    <span class="nav-link-icon">
-                        <i data-feather="mouse-pointer"></i>
-                    </span>
-                            <span>Disabled</span>
-                        </a>
-                    </li>
+                            <?php
+                        }
+                    }
+                    ?>
                 </ul>
             </div>
         </div>

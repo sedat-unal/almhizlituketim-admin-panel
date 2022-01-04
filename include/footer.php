@@ -21,14 +21,9 @@
 <!-- Main scripts -->
 <script src="./vendors/bundle.js"></script>
 
-<!-- Apex chart -->
-<script src="./vendors/charts/apex/apexcharts.min.js"></script>
-
-<!-- Daterangepicker -->
-<script src="./vendors/datepicker/daterangepicker.js"></script>
-
-<!-- DataTable -->
-<script src="./vendors/dataTable/datatables.min.js"></script>
+<!-- Slick slide -->
+<script src="./vendors/slick/slick.min.js"></script>
+<script src="./assets/js/examples/slick.js"></script>
 
 <!-- Dashboard scripts -->
 <script src="./assets/js/examples/pages/dashboard.js"></script>
